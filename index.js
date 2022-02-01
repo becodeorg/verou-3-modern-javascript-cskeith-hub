@@ -5,12 +5,15 @@ import chart from "./javascript/chart.js";
 import temperature from "./javascript/temperature.js";
 import addEveryWeekDay from "./javascript/addEveryWeekDay.js";
 
-const dayLabel = addEveryWeekDay();
-const submit = document.getElementById("submit");
-const weatherPLace = document.getElementById("weatherPlace");
 
-submit.addEventListener('click', function () {
+const submitButton = () => {
+  document.getElementById("submit");
+}
+
+submit.addEventListener('click', function (submitButton) {
+  const weatherPLace = document.getElementById("weatherPlace");
   let place = weatherPLace.value;
+  const dayLabel = addEveryWeekDay();
   fetch(`https://api.unsplash.com/search/photos?query=${place}&client_id=` + apiKey.imageKey)
     .then(response => response.json())
     .then(image => {

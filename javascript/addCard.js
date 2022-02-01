@@ -18,7 +18,7 @@ const createH3Element = () => {
     return newH3;
 }
 
-const addCard = (data, style, addEveryWeekDay, hoverEffects) => {
+const addCard = (data, style, addEveryWeekDay) => {
     const main = document.querySelector("main");
 
     const section = document.createElement("section");
