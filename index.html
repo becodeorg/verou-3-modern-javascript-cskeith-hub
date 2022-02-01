@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="col">
+            <div class="row">
+                <h1>Weather Forecast</h1>
+            </div>
+            <div class="row">
+                <h4>Pick your location:</h4>
+            </div>
+            <div class="row">
+                <form action="">
+                    <input type="text" id="weatherPlace" name="weatherPlace" value="" placeholder="Location"><br>
+                    <input type="button" id="submit" value="   Get Forecast   ">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </main>
+    <footer>
+        <p>Made By Colin Renkema</p>
+    </footer>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="addCard.js"></script>
+    <script type="module" src="infoCard.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+
+</html>
