@@ -5,17 +5,13 @@ import chart from "./javascript/chart.js";
 import temperature from "./javascript/temperature.js";
 import addEveryWeekDay from "./javascript/addEveryWeekDay.js";
 
-
 const dayLabel = addEveryWeekDay();
-
-
-
 const submit = document.getElementById("submit");
 const weatherPLace = document.getElementById("weatherPlace");
 
 submit.addEventListener('click', function () {
   let place = weatherPLace.value;
-  fetch("https://api.unsplash.com/search/photos?query=" + place + "&client_id=" + apiKey.imageKey)
+  fetch(`https://api.unsplash.com/search/photos?query=${place}&client_id=` + apiKey.imageKey)
     .then(response => response.json())
     .then(image => {
       fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${place}&units=metric&appid=` + apiKey.weatherKey)
