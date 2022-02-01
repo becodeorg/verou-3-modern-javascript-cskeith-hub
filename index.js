@@ -3,23 +3,9 @@ import addCard from "./javascript/addCard.js";
 import cardInfo from "./javascript/cardInfo.js";
 import chart from "./javascript/chart.js";
 import temperature from "./javascript/temperature.js";
+import addEveryWeekDay from "./javascript/addEveryWeekDay.js";
 
-const addEveryWeekDay = () => {
-  const weekDay = ["Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"
-  ];
-  let everyDay = [];
-  for (let i = 0; i < 5; i++) {
-    let day = new Date().getDay();
-    everyDay.push(weekDay[(day + i) % 7]);
-  }
-  return everyDay;
-}
+
 const dayLabel = addEveryWeekDay();
 
 
