@@ -8,15 +8,20 @@ import addEveryWeekDay from "./javascript/addEveryWeekDay.js";
 
 const submitButton = () => {
   document.getElementById("submit");
+  return;
 }
 
-submit.addEventListener('click', function (submitButton) {
+submit.addEventListener('click', function () {
   const weatherPLace = document.getElementById("weatherPlace");
   let place = weatherPLace.value;
   const dayLabel = addEveryWeekDay();
   fetch(`https://api.unsplash.com/search/photos?query=${place}&client_id=` + apiKey.imageKey)
     .then(response => response.json())
     .then(image => {
+      const bgImage = () => {
+        document.querySelector("body");
+        document.body.style.backgroundImage = `<img src=${image.results[0].urls.regular}`;
+      }
       fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${place}&units=metric&appid=` + apiKey.weatherKey)
         .then(response => response.json())
         .then(data => {
