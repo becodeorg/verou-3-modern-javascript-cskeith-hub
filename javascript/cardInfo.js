@@ -1,7 +1,18 @@
 const createDivElement = () => {
-    const newDiv = document.createElement("div");
-    return newDiv;
+  const newDiv = document.createElement("div");
+  return newDiv;
 }
+
+const createParagraphElement = () => {
+  const newParagraph = document.createElement("p");
+  return newParagraph;
+}
+
+const createH1Element = () => {
+  const newH1 = document.createElement("h1");
+  return newH1;
+}
+
 const cardInfo = (data, image) => {
     const main = document.querySelector("main");
     const section = document.createElement("section");

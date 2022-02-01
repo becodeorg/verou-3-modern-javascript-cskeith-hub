@@ -19,7 +19,9 @@ const createH3Element = () => {
 }
 
 const addCard = (data, style, addEveryWeekDay, hoverEffects) => {
+    console.log("cow");
     const main = document.querySelector("main");
+
     const section = document.createElement("section");
     main.appendChild(section);
     const day1 = createDivElement();
