@@ -1,0 +1,20 @@
+{
+  "name": "verou-3-modern-javascript-cskeith-hub",
+  "version": "1.0.0",
+  "description": "Did you know? With modern Javascript, we can also separate our functions in multiple files! Resulting in an even better organised and readable way! This is done by making use of the import/export directives.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/becodeorg/verou-3-modern-javascript-cskeith-hub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/becodeorg/verou-3-modern-javascript-cskeith-hub/issues"
+  },
+  "homepage": "https://github.com/becodeorg/verou-3-modern-javascript-cskeith-hub#readme"
+}
