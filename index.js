@@ -30,3 +30,4 @@ document.querySelector("form").addEventListener('submit', function(event){
     event.preventDefault();
     getWeather();
 });
+console.log("Hello, Webpack!");

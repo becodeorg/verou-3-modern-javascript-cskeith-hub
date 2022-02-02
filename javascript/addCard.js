@@ -2,25 +2,20 @@ const createDivElement = () => {
     const newDiv = document.createElement("div");
     return newDiv;
 }
-
 const createParagraphElement = () => {
     const newParagraph = document.createElement("p");
     return newParagraph;
 }
-
 const createH1Element = () => {
     const newH1 = document.createElement("h1");
     return newH1;
 }
-
 const createH3Element = () => {
     const newH3 = document.createElement("h3");
     return newH3;
 }
-
 const addCard = (data, style, addEveryWeekDay) => {
     const main = document.querySelector("main");
-
     const section = document.createElement("section");
     main.appendChild(section);
     const day1 = createDivElement();
@@ -56,14 +51,10 @@ const addCard = (data, style, addEveryWeekDay) => {
     const weather = createDivElement();
     weather.className = "weather";
     day1.append(weather);
-
     const weatherParagraph = createParagraphElement();
     console.log(data);
     weatherParagraph.innerHTML = data.weather[0].main;
-   
-    
     day1.append(weatherParagraph);
-
     const windH3 = createH3Element();
     windH3.innerText = "Wind:";
     day1.append(windH3);
