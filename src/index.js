@@ -7,6 +7,10 @@ import addEveryWeekDay from "./javascript/addEveryWeekDay.js";
 import { DateTime } from "luxon";
 
 
+
+
+
+
 setInterval(() => {
 let now = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
 let DateNowPara = document.querySelector('p');
