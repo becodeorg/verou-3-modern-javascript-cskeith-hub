@@ -28,6 +28,9 @@ const getWeather = () => {
 }
 document.querySelector("form").addEventListener('submit', function(event){
     event.preventDefault();
+    if (event.key === "Enter"){
+      console.log("cow")
+    }
     getWeather();
 });
 console.log("Hello, Webpack!");
