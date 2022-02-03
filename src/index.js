@@ -7,9 +7,8 @@ import addEveryWeekDay from "./javascript/addEveryWeekDay.js";
 import { DateTime } from "luxon";
 
 
-setInterval((Time) => {
-  let now = DateTime.now().toString();
-let dateNow = document.getElementsByClassName("now");
+setInterval(() => {
+let now = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
 let DateNowPara = document.querySelector('p');
 DateNowPara.innerHTML = now;
 }, 1000);
