@@ -1,6 +1,6 @@
 module.exports = [{
         output: {
-            filename: './dist-main.js',
+            filename: './main.js',
         },
         name: 'index.js',
         entry: './src/index.js',
