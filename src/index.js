@@ -4,6 +4,17 @@ import cardInfo from "./javascript/cardInfo.js";
 import chart from "./javascript/chart.js";
 import temperature from "./javascript/temperature.js";
 import addEveryWeekDay from "./javascript/addEveryWeekDay.js";
+import { DateTime } from "luxon";
+
+
+setInterval((Time) => {
+  let now = DateTime.now().toString();
+let dateNow = document.getElementsByClassName("now");
+let DateNowPara = document.querySelector('p');
+DateNowPara.innerHTML = now;
+}, 1000);
+
+
 
 const getWeather = () => {
   let weatherPLace = document.getElementById("weatherPlace").value;
@@ -15,7 +26,6 @@ const getWeather = () => {
       fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${weatherPLace}&units=metric&appid=` + apiKey.weatherKey)
         .then(response => response.json())
         .then(data => {
-          console.log(data);
           const dailyTemperature = temperature(data);
           chart(dayLabel, dailyTemperature);
           cardInfo(data, image);
@@ -29,8 +39,10 @@ const getWeather = () => {
 document.querySelector("form").addEventListener('submit', function(event){
     event.preventDefault();
     if (event.key === "Enter"){
-      console.log("cow")
+      console.log("cow");
     }
+    console.log("cat");
     getWeather();
 });
 console.log("Hello, Webpack!");
+

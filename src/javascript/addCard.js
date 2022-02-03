@@ -52,7 +52,6 @@ const addCard = (data, style, addEveryWeekDay) => {
     weather.className = "weather";
     day1.append(weather);
     const weatherParagraph = createParagraphElement();
-    console.log(data);
     weatherParagraph.innerHTML = data.weather[0].main;
     day1.append(weatherParagraph);
     const windH3 = createH3Element();

@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "watch": "webpack --watch"
-    
+    "watch": "webpack --watch",
+    "luxon": "webpack --luxon"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/becodeorg/verou-3-modern-javascript-cskeith-hub#readme",
   "dependencies": {
+    "luxon": "^2.3.0",
     "webpack": "^5.68.0"
   },
   "devDependencies": {
