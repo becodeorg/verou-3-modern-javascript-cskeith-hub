@@ -4,18 +4,12 @@ import cardInfo from "./javascript/cardInfo.js";
 import chart from "./javascript/chart.js";
 import temperature from "./javascript/temperature.js";
 import addEveryWeekDay from "./javascript/addEveryWeekDay.js";
-import { DateTime } from "luxon";
+// import { DateTime } from "luxon";
 
 
-
-
-
-
-setInterval(() => {
-let now = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
-let DateNowPara = document.querySelector('p');
-DateNowPara.innerHTML = now;
-}, 1000);
+  // let dateNow = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
+  // let DateNowPara = document.querySelector('p');
+  // DateNowPara.innerHTML = dateNow;
 
 
 
@@ -39,12 +33,12 @@ const getWeather = () => {
 
     })
 }
-document.querySelector("form").addEventListener('submit', function(event){
+
+document.querySelector("form").addEventListener('submit', function(event,
+  ){
     event.preventDefault();
-    if (event.key === "Enter"){
-      console.log("cow");
-    }
-    console.log("cat");
+    let chart = document.getElementById("myChart");
+    chart.destroy();
     getWeather();
 });
 console.log("Hello, Webpack!");

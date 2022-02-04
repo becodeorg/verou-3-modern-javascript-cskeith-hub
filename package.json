@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "watch": "webpack --watch",
-    "luxon": "webpack --luxon"
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -25,6 +24,7 @@
     "webpack": "^5.68.0"
   },
   "devDependencies": {
+    "eslint": "^8.8.0",
     "webpack-cli": "^4.9.2"
   }
 }
