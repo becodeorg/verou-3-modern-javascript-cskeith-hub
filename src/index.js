@@ -6,7 +6,7 @@ import temperature from "./javascript/temperature.js";
 import addEveryWeekDay from "./javascript/addEveryWeekDay.js";
 // import { DateTime } from "luxon";
 
-
+fg
 
   // let dateNow = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
   // let DateNowPara = document.querySelector('p');
