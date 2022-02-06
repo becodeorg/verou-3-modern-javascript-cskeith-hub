@@ -1,14 +1,14 @@
 // Function call chart with the parameters of days and the temperatures
 const chart = (dayLabel, dailyTemperature) => {
-   
     // const that gets the canvas id myChart
     const ctx = document.getElementById('myChart').getContext('2d');
     // let myChart  with Chart data inside
-    let myChart = new chart(ctx, {
+    return new chart(ctx, {
         // type = bar chart
         type: 'bar',
-        // Data = whats inside the chart
+        // Data = whats inside the chart                  
         data: {
+            // labels
             labels: dayLabel,
             datasets: [{
                 label: 'Temperature',
@@ -43,10 +43,7 @@ const chart = (dayLabel, dailyTemperature) => {
             }
         }
 
-    });
-    
+    }); 
 }
-
-
 
 export default chart;

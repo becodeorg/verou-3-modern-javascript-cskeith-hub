@@ -7,6 +7,7 @@ import addEveryWeekDay from "./javascript/addEveryWeekDay.js";
 // import { DateTime } from "luxon";
 
 
+
   // let dateNow = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
   // let DateNowPara = document.querySelector('p');
   // DateNowPara.innerHTML = dateNow;
@@ -37,8 +38,6 @@ const getWeather = () => {
 document.querySelector("form").addEventListener('submit', function(event,
   ){
     event.preventDefault();
-    let chart = document.getElementById("myChart");
-    chart.destroy();
     getWeather();
 });
 console.log("Hello, Webpack!");
